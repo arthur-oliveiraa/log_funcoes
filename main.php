@@ -13,4 +13,11 @@ function Subtrair($a, $b)
 {
     return $a - $b;
 }
-echo "Resultado: ", Subtrair(10, 5);
+
+function Divisao($a, $b)
+{
+    return $a / $b;
+}
+
+// Criar função dividir (v4) e multiplicar (v5)
+echo "Resultado: ", Divisao(10, 2);
