@@ -35,9 +35,17 @@ namespace logica {
     function verificaIdade($idade)
     {
         if ($idade >= 18) {
-            echo "Maior de idade";
+            return "Maior de idade";
         } else {
-            echo "Menor de idade";
+            return "Menor de idade";
+        }
+    }
+    function verificaExercito($sexo, $idade)
+    {
+        if ($sexo == "masculino" && $idade >= 18) {
+            return "Você deve se alistar no exército";
+        } else {
+            return "Alistamento não obrigatório";
         }
     }
 }
