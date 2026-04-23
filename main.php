@@ -9,4 +9,8 @@ function Somar($a, $b, $c)
 {
     return $a + $b + $c;
 }
-echo "Resultado: ", Somar(5, 7, 3);
+function Subtrair($a, $b)
+{
+    return $a - $b;
+}
+echo "Resultado: ", Subtrair(10, 5);
