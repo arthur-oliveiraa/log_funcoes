@@ -19,5 +19,10 @@ function Divisao($a, $b)
     return $a / $b;
 }
 
+function Multiplicacao($a, $b)
+{
+    return $a * $b;
+}
+
 // Criar função dividir (v4) e multiplicar (v5)
-echo "Resultado: ", Divisao(10, 2);
+echo "Resultado: ", Multiplicacao(10, 2);
