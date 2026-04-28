@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "bibliotecaFuncoes2.php";
+require_once "bibliotecaArea.php";
 
 use function geometria\areaQuadrado;
 use function geometria\areaRetangulo;
