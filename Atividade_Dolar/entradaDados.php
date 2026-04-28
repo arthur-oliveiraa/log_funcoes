@@ -27,4 +27,3 @@ echo "Libra para Real: " . $conv . "\n";
 $iene = 0.31;
 $conv = ieneParaReal($iene, $real, $conv);
 echo "Iene para Real: " . $conv . "\n";
-.
