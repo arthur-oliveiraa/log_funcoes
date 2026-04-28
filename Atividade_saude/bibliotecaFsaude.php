@@ -2,26 +2,31 @@
 
 namespace saude {
 
-    function dolarParaReal($dolar, $real, $conv)
+    function calcularIMC($peso, $altura, $resultado)
     {
-        return $conv = $real * $dolar;
+        return $resultado = $peso / ($altura * $altura);
     }
 
-    function euroParaReal($euro, $real, $conv)
+
+    function valorIdealAgua($peso)
     {
-        return $conv = $euro * $real;
+        return $peso * 35;
     }
 
-    function pesoParaReal($peso, $real, $conv)
+    function frequenciaCardiacaMaxima($idade)
     {
-        return  $conv = $peso * $real;
+        return 220 - $idade;
     }
-    function libraParaReal($libra, $real, $conv)
+    function converterLibrasParaQuilo($libras)
     {
-        return $conv = $libra * $real;
+        return $libras * 0.453592;
     }
-    function ieneParaReal($iene, $real, $conv)
+    function calcularCaloriasBasais($peso, $idade, $sexo)
     {
-        return $conv = $iene * $real;
+        if ($sexo == "masculino") {
+            return (10 * $peso) + (6.25 * 180) - (5 * $idade) + 5;
+        } else {
+            return (10 * $peso) + (6.25 * 160) - (5 * $idade) - 161;
+        }
     }
 }
